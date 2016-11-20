@@ -1,7 +1,48 @@
 nav {
-	border: 1px solid $main-color;
+    display: flex;
+    flex-direction: row;
+    background: $main-color;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    ul {
+        list-style: none;
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        padding-left: 20%;
+        // padding-right: 10px;
+    }
+    .logo-container {
+        width: 70px;
+        // margin: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $body-text-color;
+        position: relative;
 
-
-
-
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -3px;
+            left: 0;
+            background-color: $accent-color;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+        }
+    }
 }
