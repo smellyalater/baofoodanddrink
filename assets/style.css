@@ -1,0 +1,17 @@
+/* 
+supposed to be setting up a grid based on flexbox
+from here: https://css-tricks.com/dont-overthink-flexbox-grids/
+*/
+.flex-grid {
+  display: flex; }
+
+.col {
+  flex: 1; }
+
+nav {
+  border: 1px solid tomato; }
+
+.image-placeholder {
+  background-color: #555; }
+
+/*# sourceMappingURL=style.css.map */

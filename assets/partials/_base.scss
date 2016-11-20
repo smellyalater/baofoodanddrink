@@ -1,0 +1,17 @@
+$main-color: tomato;
+$accent-color: lemonchiffon;
+
+
+
+/* 
+supposed to be setting up a grid based on flexbox
+from here: https://css-tricks.com/dont-overthink-flexbox-grids/
+*/
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
