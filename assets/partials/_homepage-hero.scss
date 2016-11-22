@@ -1,19 +1,25 @@
 .hero {
-	height: 70vh;
-	border: 1px solid red;
-	background-image: url('	images/howl-at-the-moon-smashing-magazine.png');
-
-	& .hero-container {
-		
-
-	}
-
-
-}
-
-
-
-
-button {
-
+    height: 92vh;
+    background: url(images/howl-at-the-moon-smashing-magazine.png) center center;
+    background-size: cover;
+    // position: relative;
+    // top: 60px;
+    .hero-container {
+        position: relative;
+        top: 5em;
+        left: 5em;
+        color: white;
+        h1 {
+            margin: 0;
+        }
+    }
+    .hero-buttons-container a {
+        border: none;
+        border-radius: 6px;
+        background-color: rgb(255, 255, 255);
+        padding: 5px 20px;
+        color: black;
+        box-shadow: 0px 4px 0px grey;
+        text-decoration: none;
+    }
 }

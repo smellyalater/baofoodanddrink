@@ -8,13 +8,24 @@ from here: https://css-tricks.com/dont-overthink-flexbox-grids/
 .col {
   flex: 1; }
 
+.mainpage.pinned-nav nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+  box-shadow: 0 0 19px black; }
+
 nav {
   display: flex;
   flex-direction: row;
   background: grey;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; }
+  padding: 10px;
+  height: 40px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 90; }
   nav ul {
     list-style: none;
     display: flex;
@@ -24,7 +35,8 @@ nav {
   nav .logo-container {
     width: 70px; }
     nav .logo-container img {
-      width: 100%; }
+      width: 100%;
+      transform: rotate(21deg); }
   nav a {
     text-decoration: none;
     color: black;
@@ -33,7 +45,7 @@ nav {
       content: "";
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 3px;
       bottom: -3px;
       left: 0;
       background-color: tomato;
@@ -48,9 +60,55 @@ nav {
       -webkit-transform: scaleX(1); }
 
 .hero {
-  height: 70vh;
-  border: 1px solid red;
-  background-image: url("	images/howl-at-the-moon-smashing-magazine.png"); }
+  height: 92vh;
+  background: url(images/howl-at-the-moon-smashing-magazine.png) center center;
+  background-size: cover; }
+  .hero .hero-container {
+    position: relative;
+    top: 5em;
+    left: 5em;
+    color: white; }
+    .hero .hero-container h1 {
+      margin: 0; }
+  .hero .hero-buttons-container a {
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px 20px;
+    color: black;
+    box-shadow: 0px 4px 0px grey;
+    text-decoration: none; }
+
+.chapter-title {
+  position: relative;
+  top: 60px;
+  width: 50%;
+  top: 0;
+  left: 0; }
+
+.cover {
+  width: 49%;
+  background: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.pinned-nav .cover {
+  position: fixed; }
+
+.chapter-contents {
+  width: 49%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em; }
 
 .image-placeholder {
   background-color: #555; }
