@@ -82,7 +82,6 @@ nav {
 .chapter-title {
   position: relative;
   top: 60px;
-  width: 50%;
   top: 0;
   left: 0; }
 
@@ -93,22 +92,27 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1em;
   position: relative;
   top: 0;
   left: 0; }
 
 .pinned-nav .cover {
-  position: fixed; }
+  position: fixed;
+  top: 60px; }
 
 .chapter-contents {
   width: 49%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1em; }
+  position: absolute;
+  left: 50%;
+  top: 0; }
+
+.pinned-nav .chapter-contents {
+  top: 60px; }
 
 .image-placeholder {
   background-color: #555; }
