@@ -1,14 +1,12 @@
 .chapter-title {
-	position: relative;
-	top: 60px;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 60px;
+    top: 0;
+    left: 0;
 }
-	
 
 .cover {
-	width: 49%;
-    background: pink;
+    width: 49%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,25 +18,50 @@
 }
 
 .pinned-nav .cover {
-	position: fixed;
-	top: 60px;
-}
-
-.chapter-contents {
-    width: 49%;
-    // border: 2px solid red;
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // padding: 0 1em;
-    position: absolute;
-    left: 50%;
-    top: 0;
+    position: fixed;
+    top: 60px;
 }
 
 .pinned-nav .chapter-contents {
-	top: 60px;
+    top: 60px;
 }
 
+.about-section {
+    .cover {
+        background-color: pink;
+    }
+    .chapter-contents {
+        width: 49%;
+        // border: 2px solid red;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // padding: 0 1em;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+}
+
+.cover {
+    width: 49%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0 1em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pinned-nav .cover {
+    position: fixed;
+    top: 60px;
+}
+
+.pinned-nav .chapter-contents {
+    top: 60px;
+}
