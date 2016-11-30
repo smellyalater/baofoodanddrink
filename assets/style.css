@@ -1,11 +1,16 @@
+* {
+  box-sizing: border-box; }
+
 /* 
 supposed to be setting up a grid based on flexbox
 from here: https://css-tricks.com/dont-overthink-flexbox-grids/
 */
 .flex-grid {
+  display: -ms-flexbox;
   display: flex; }
 
 .col {
+  -ms-flex: 1;
   flex: 1; }
 
 .mainpage.pinned-nav nav {
@@ -64,7 +69,7 @@ nav {
   background: url(images/howl-at-the-moon-smashing-magazine.png) center center;
   background-size: cover; }
   .hero .hero-container {
-    position: relative;
+    position: absolute;
     top: 5em;
     left: 5em;
     color: white; }
@@ -97,10 +102,10 @@ nav {
 
 .pinned-nav .cover {
   position: fixed;
-  top: 60px; }
+  top: 40px; }
 
 .pinned-nav .chapter-contents {
-  top: 60px; }
+  top: 40px; }
 
 .about-section .cover {
   background-color: pink; }
@@ -115,22 +120,12 @@ nav {
   left: 50%;
   top: 0; }
 
-.cover {
-  width: 49%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 0;
-  left: 0; }
-
 .pinned-nav .cover {
   position: fixed;
-  top: 60px; }
+  top: 40px; }
 
 .pinned-nav .chapter-contents {
-  top: 60px; }
+  top: 40px; }
 
 .image-placeholder {
   background-color: #555; }
