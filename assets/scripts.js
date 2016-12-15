@@ -7,42 +7,25 @@
 // var ui = ShopifyBuy.UI.init(client);
 
 
-
 $('document').ready(function() {
 
-    /*
-     fix nav to top on scroll
-    */
-    function fixNavToTopOfViewport() {
-        // Check the initial Poistion of the Sticky Header
-        var pinnedNav = $('nav').offset().top;
 
+/*
+ fix nav to top on scroll
+*/
 
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > pinnedNav) {
-                $('body').addClass('pinned-nav');
-                // $('#stickyalias').css('display', 'block');
-            } else {
-                $('body').removeClass('pinned-nav');
-                // $('#stickyalias').css('display', 'none');
-            }
-        // console.log(pinnedNav)
-        });
-    }
-
-    fixNavToTopOfViewport();
+$('.mainpage nav').fixTo('body');
+$('.about-section .cover').fixTo('.about-section',
+    {mind: 'nav.pinned-nav'
+});
+$('.shop-now .cover').fixTo('body');
+/* 
+ // fix nav to top on scroll
+*/
 
 
 
 
-
-
-
-
-
-    /* 
-     // fix nav to top on scroll
-    */
 
 
 
@@ -74,8 +57,5 @@ $('document').ready(function() {
 
 
 
-    $(window).resize(function() {
-        fixNavToTopOfViewport();
-    });
 
 });
