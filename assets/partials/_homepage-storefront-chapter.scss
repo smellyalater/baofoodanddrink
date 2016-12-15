@@ -1,76 +1,79 @@
-.chapter-title {
+.content-block {
     position: relative;
     top: 60px;
     top: 0;
     left: 0;
+    /* display: -ms-flexbox;*/
+    /* display: flex;*/
+    /* -ms-flex-direction: row;*/
+    /* flex-direction: row;*/
+    /* -ms-flex-pack: justify;*/
+    /* justify-content: space-between;*/
+    /* align-content: center;*/
 }
 
 .cover {
     width: 49%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // padding: 0 1em;
-    position: relative;
+    /* display: -ms-flexbox;*/
+    /* display: flex;*/
+    /* -ms-flex-pack: center;*/
+    /* justify-content: center;*/
+    /* -ms-flex-align: center;*/
+    /* align-items: center;*/
+    /* padding: 0 1em;*/
+    /* position: relative;*/
     top: 0;
     left: 0;
+    position: absolute;
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
-.pinned-nav .cover {
-    position: fixed;
-    top: 40px;
+.chapter-contents {
+    width: 49%;
+    /* border: 2px solid red;*/
+    /* height: 100vh; */
+    /* display: -ms-flexbox;*/
+    /* display: flex;*/
+    /* -ms-flex-direction: column;*/
+    /* flex-direction: column;*/
+    /* -ms-flex-pack: center;*/
+    /* justify-content: center;*/
+    /* -ms-flex-align: center;*/
+    /* align-items: center;*/
+    /* padding: 0 1em;*/
+    position: relative;
+    left: 50%;
+    /* top: 0;*/
 }
 
-.pinned-nav .chapter-contents {
-    top: 40px;
+.pinned-nav {
+    .cover,
+    .chapter-contents {
+        top: 40px;
+        /* position: relative;*/
+    }
+
+    .cover {
+    	position: fixed;
+    }
 }
 
 .about-section {
     .cover {
         background-color: pink;
-    }
-    .chapter-contents {
-        width: 49%;
-        // border: 2px solid red;
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // padding: 0 1em;
-        position: absolute;
-        left: 50%;
-        top: 0;
+        /* height: 100%;*/
     }
 }
 
-.pinned-nav .cover {
-    position: fixed;
-    top: 40px;
+.shop-now {
+    .cover {
+        background-color: grey;
+        /* height: 100%;*/
+    }
 }
-
-.pinned-nav .chapter-contents {
-    top: 40px;
-}
-
-// .cover {
-//     width: 49%;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     // padding: 0 1em;
-//     position: relative;
-//     top: 0;
-//     left: 0;
-// }
-
-// .pinned-nav .cover {
-//     position: fixed;
-//     top: 60px;
-// }
-
-// .pinned-nav .chapter-contents {
-//     top: 60px;
-// }
