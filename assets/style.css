@@ -5,15 +5,6 @@
 supposed to be setting up a grid based on flexbox
 from here: https://css-tricks.com/dont-overthink-flexbox-grids/
 */
-.flex-grid {
-  display: -ms-flexbox;
-  display: flex; }
-
-.col {
-  -ms-flex: 1;
-  flex: 1;
-  padding: 1em; }
-
 .mainpage.pinned-nav nav {
   position: fixed;
   top: 0;
@@ -85,56 +76,34 @@ nav {
     box-shadow: 0px 4px 0px grey;
     text-decoration: none; }
 
-.content-block {
-  position: relative;
-  top: 60px;
-  top: 0;
-  left: 0;
-  /* display: -ms-flexbox;*/
-  /* display: flex;*/
-  /* -ms-flex-direction: row;*/
-  /* flex-direction: row;*/
-  /* -ms-flex-pack: justify;*/
-  /* justify-content: space-between;*/
-  /* align-content: center;*/ }
+.mainpage.fixed-nav nav {
+  position: fixed;
+  top: 0; }
+.mainpage.fixed-nav .about-section {
+  margin-top: 40px; }
 
-.cover {
-  width: 49%;
-  /* display: -ms-flexbox;*/
-  /* display: flex;*/
-  /* -ms-flex-pack: center;*/
-  /* justify-content: center;*/
-  /* -ms-flex-align: center;*/
-  /* align-items: center;*/
-  /* padding: 0 1em;*/
-  /* position: relative;*/
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 100vh;
+.content-block {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.section-name {
+  width: 49%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .chapter-contents {
-  width: 49%;
-  /* border: 2px solid red;*/
-  /* height: 100vh; */
-  /* display: -ms-flexbox;*/
-  /* display: flex;*/
-  /* -ms-flex-direction: column;*/
-  /* flex-direction: column;*/
-  /* -ms-flex-pack: center;*/
-  /* justify-content: center;*/
-  /* -ms-flex-align: center;*/
-  /* align-items: center;*/
-  /* padding: 0 1em;*/
-  position: relative;
-  left: 50%;
-  /* top: 0;*/ }
+  width: 49%; }
 
 .pinned-nav .cover,
 .pinned-nav .chapter-contents {

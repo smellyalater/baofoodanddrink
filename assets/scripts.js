@@ -7,21 +7,27 @@
 // var ui = ShopifyBuy.UI.init(client);
 
 
-$('document').ready(function() {
+$(document).ready(function () {
+    // var navOffsetTop;
+    // var windowScrollY;
 
+    // /*
+    //  fix nav to top on scroll
+    // */
 
-/*
- fix nav to top on scroll
-*/
+    /* Initialize sticky outside the event listener as a cached selector.
+     * Also, initialize any needed variables outside the listener for 
+     * performance reasons - no variable instantiation is happening inside the listener.
+     */
 
-$('.mainpage nav').fixTo('body');
-$('.about-section .cover').fixTo('.about-section',
-    {mind: 'nav.pinned-nav'
-});
-$('.shop-now .cover').fixTo('body');
-/* 
- // fix nav to top on scroll
-*/
+    $(document).ready(function () {
+        $("nav").sticky({
+            topSpacing: 0
+        });
+    });
+    /* 
+     // fix nav to top on scroll
+    */
 
 
 
@@ -53,7 +59,6 @@ $('.shop-now .cover').fixTo('body');
     //     }
     //     }
     // });
-
 
 
 
