@@ -2,28 +2,12 @@ $main-color: grey;
 $accent-color: tomato;
 $body-text-color: black;
 $body-font-size: 16px;
-
-
-
-
-
-
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* 
 supposed to be setting up a grid based on flexbox
 from here: https://css-tricks.com/dont-overthink-flexbox-grids/
 */
-
-.flex-grid {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.col {
-  -ms-flex: 1;
-      flex: 1;
-      padding: 1em;
-}
