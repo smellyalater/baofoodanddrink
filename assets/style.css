@@ -64,7 +64,7 @@ nav {
     position: absolute;
     top: 5em;
     left: 5em;
-    color: white; }
+    color: black; }
     .hero .hero-container h1 {
       margin: 0; }
   .hero .hero-buttons-container a {
@@ -81,6 +81,9 @@ nav {
   top: 0; }
 .mainpage.fixed-nav .about-section {
   margin-top: 40px; }
+
+.body-content {
+  padding: 0 4%; }
 
 .content-block {
   display: -webkit-box;
@@ -105,20 +108,16 @@ nav {
 .chapter-contents {
   width: 49%; }
 
-.pinned-nav .cover,
-.pinned-nav .chapter-contents {
-  top: 40px;
-  /* position: relative;*/ }
-.pinned-nav .cover {
-  position: fixed; }
+.btn {
+  padding: 10px;
+  border: none;
+  transition: all .2s ease;
+  min-width: 13em; }
 
-.about-section .cover {
-  background-color: pink;
-  /* height: 100%;*/ }
-
-.shop-now .cover {
-  background-color: grey;
-  /* height: 100%;*/ }
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 8px #ccc;
+  transform: translateY(-3px); }
 
 .image-placeholder {
   background-color: #555; }
