@@ -7,7 +7,7 @@
 // var ui = ShopifyBuy.UI.init(client);
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     // var navOffsetTop;
     // var windowScrollY;
 
@@ -20,10 +20,8 @@ $(document).ready(function () {
      * performance reasons - no variable instantiation is happening inside the listener.
      */
 
-    $(document).ready(function () {
-        $("nav").sticky({
-            topSpacing: 0
-        });
+    $("nav").sticky({
+        topSpacing: 0
     });
     /* 
      // fix nav to top on scroll

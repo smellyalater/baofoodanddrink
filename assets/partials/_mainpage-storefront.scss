@@ -1,0 +1,66 @@
+.mainpage {
+    background: #2BC0E4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2BC0E4, #EAECC6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2BC0E4, #EAECC6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.body-content {
+    margin-top: 3em;
+}
+
+.content-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 300px;
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.section-name {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    p {
+        height: 200px;
+        width: 200px;
+        background: rebeccapurple;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.chapter-contents {
+    width: 66%;
+    p {
+        margin: 2em 0;
+        line-height: 1.4em
+    }
+}
+
+.shop-now-section img {
+    // height: 100%;
+    width: 100%;
+}
