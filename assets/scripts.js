@@ -20,10 +20,8 @@ $(document).ready(function() {
      * performance reasons - no variable instantiation is happening inside the listener.
      */
 
-    $(document).ready(function() {
-        $("nav").sticky({
-            topSpacing: 0
-        });
+    $("nav").sticky({
+        topSpacing: 0
     });
     /* 
      // fix nav to top on scroll
